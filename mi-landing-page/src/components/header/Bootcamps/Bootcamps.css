@@ -1,0 +1,63 @@
+.bootcamps-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Establece el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  border-radius: 0;
+  margin-top: -140px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-content h1,
+.left-content h2,
+.left-content p,
+.left-content button {
+  width: 100%;
+  max-width: none;
+}
+
+.left-content {
+  background-color: #f8f9fa; /* Fondo gris para el elemento izquierdo */
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-top: 0; /* Elimina el margen superior para posicionar la imagen en la parte superior */
+}
+
+/* Aplica los colores y tipos de letra del título y botón */
+.left-content h1 {
+  color: #e63946;
+  font-size: 2em;
+}
+
+.left-content h2 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.left-content p {
+  color: #333;
+  font-size: 1em;
+}
+
+.left-content button {
+  background-color: #e63946;
+  color: white;
+  font-size: 1em;
+}
+
+.left-content button:hover {
+  background-color: #c72c41;
+}

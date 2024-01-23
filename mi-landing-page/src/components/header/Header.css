@@ -1,0 +1,47 @@
+/* En tu archivo Header.css */
+
+/* Asegúrate de que no hay márgenes en el cuerpo de la página */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del navbar para que ocupe el ancho completo y se fije en la parte superior */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los elementos del menú y el logo horizontalmente */
+  background-color: black;
+  padding: 0 20px;
+  width: 100%; /* Asegúrate de que el navbar ocupe todo el ancho */
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Esto asegura que la navbar esté por encima de otros elementos */
+}
+
+.navbar-logo {
+  height: 50px; /* Ajusta según el tamaño deseado para tu logo */
+  margin-right: 20px; /* Espacio entre el logo y el menú */
+  position: absolute; /* Posición absoluta para sacarlo del flujo de flexbox */
+  left: 20px; /* Ajusta esto para alinear el logo con el borde izquierdo */
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0; /* Elimina el margen predeterminado de la lista */
+  position: relative; /* Establece una posición relativa para los elementos del menú */
+}
+
+.menu-item {
+  padding: 10px 20px; /* Agrega un padding horizontal para espaciar los elementos */
+  color: white;
+  text-align: center;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  background-color: #333; /* Cambio de color al pasar el ratón para mejor interactividad */
+}
