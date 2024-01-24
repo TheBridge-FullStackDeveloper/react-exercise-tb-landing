@@ -1,9 +1,14 @@
 import React from "react";
-import data from '../../data.json';
+import data from "../../data.json";
 
 
-
-  console.log(data.bootcamps.header)
+function valueProperty(nameCourse, propCourse) {
+  const cursoElegido = data.bootcamps.courses.find(
+    (courses) => courses.name === nameCourse
+  );
+  const valueProperty = cursoElegido[propCourse];
+  return valueProperty;
+}
 
 function Card({ title, img, hours, format, description }) {
   return (
@@ -17,40 +22,54 @@ function Card({ title, img, hours, format, description }) {
       <p>{description}</p>
       <p>+info</p>
     </>
-  )
+  );
 }
-
 
 function Cards() {
   return (
+    <>
     <div>
-        <Card
-          curse={"ddd"}
-          description={"d"}
+      <Card
+        title={valueProperty("ds", "title")}
+        img={valueProperty("ds", "img")}
+        hours={valueProperty("ds", "hours")}
+        format={valueProperty("ds", "format")}
+        description={valueProperty("ds", "description")}
         />
-
-        {/* <Card
-          curse={data.name}
-          description={data.description}
-        />
-
-        <Card
-          curse={fullStack.name}
-          description={fullStack.description}
-        />
-
-        <Card
-          curse={marketing.name}
-          description={marketing.description}
-        />
-
-        <Card
-          curse={uxui.name}
-          description={uxui.description}
-        /> */}
-
     </div>
-  )
+    
+    <div>
+      <Card
+        title={valueProperty("fs", "title")}
+        img={valueProperty("fs", "img")}
+        hours={valueProperty("fs", "hours")}
+        format={valueProperty("fs", "format")}
+        description={valueProperty("fs", "description")}
+        />
+    </div>
+    
+    <div>
+      <Card
+        title={valueProperty("dm", "title")}
+        img={valueProperty("dm", "img")}
+        hours={valueProperty("dm", "hours")}
+        format={valueProperty("dm", "format")}
+        description={valueProperty("dm", "description")}
+        />
+    </div>
+    
+    <div>
+      <Card
+        title={valueProperty("ux", "title")}
+        img={valueProperty("ux", "img")}
+        hours={valueProperty("ux", "hours")}
+        format={valueProperty("ux", "format")}
+        description={valueProperty("ux", "description")}
+        />
+    </div>
+    
+    </>
+  );
 }
 
 export default Cards;
