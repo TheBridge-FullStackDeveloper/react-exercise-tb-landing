@@ -1,0 +1,13 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(15, 15, 41);
+  height: 50px;
+  color: white;
+  padding: 15px;
+}
+
+.listItem {
+  list-style-type: none;
+}

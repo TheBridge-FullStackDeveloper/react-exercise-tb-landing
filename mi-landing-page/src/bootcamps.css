@@ -1,0 +1,4 @@
+.bootcampsCards {
+  display: flex;
+  flex-direction: row;
+}

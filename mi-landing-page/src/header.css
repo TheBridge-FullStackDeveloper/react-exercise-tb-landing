@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerInfo {
+    padding: 20px;
+}
+
+.headerImage {
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
