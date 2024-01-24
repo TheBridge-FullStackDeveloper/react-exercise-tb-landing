@@ -1,7 +1,7 @@
 import React from 'react';
 import './bootcamps.css';
-import headerData from '../../../data.json'; // Esta es la ruta correcta
-import backgroundImage from "../../../assets/444.png";
+import headerData from '../../../data.json'; // Asegúrate de que esta es la ruta correcta
+import backgroundImage from "../../../assets/444.png"; // Asegúrate de que esta es la ruta correcta
 
 function Bootcamps() {
   const { title, subheading, paragraph, button } = headerData.header;
@@ -15,9 +15,7 @@ function Bootcamps() {
         <button>{button}</button>
       </div>
       <div className="right-content">
-        <div className="image-container">
-          <img src={backgroundImage} alt="Background" className="background-image" />
-        </div>
+        <img src={backgroundImage} alt="Background" className="background-image" />
       </div>
     </div>
   );

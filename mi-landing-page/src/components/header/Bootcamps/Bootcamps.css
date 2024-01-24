@@ -1,63 +1,75 @@
 .bootcamps-container {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px; /* Establece el ancho máximo según tus necesidades */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
-  padding: 20px;
-  background-color: #f8f9fa;
+  flex-direction: row;
+  align-items: stretch; /* Esto hará que los hijos se estiren para ocupar todo el contenedor */
+  max-width: 1400px;
+  margin: 0 auto; /* Esto centra tu contenedor en la página */
+  padding: 0;
   color: #333;
-  border-radius: 0;
-  margin-top: -140px;
+  height: 495px; /* Establece una altura fija para que coincida con la imagen */
 }
 
-.left-content,
-.right-content {
+.left-content {
   flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(233, 230, 230);
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: stretch;
 }
 
+.right-content {
+  flex: 1; /* Toma la mitad del espacio, igual que left-content */
+  padding: 0; /* No padding para que la imagen pueda llenar todo el espacio */
+}
+
+.background-image {
+  width: 100%; /* Ocupa todo el ancho de right-content */
+  height: 100%; /* Ocupa toda la altura de right-content */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+/* Estilos para el título, subtítulo, párrafo y botón */
 .left-content h1,
 .left-content h2,
 .left-content p,
 .left-content button {
-  width: 100%;
-  max-width: none;
-}
-
-.left-content {
-  background-color: #f8f9fa; /* Fondo gris para el elemento izquierdo */
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  margin-top: 0; /* Elimina el margen superior para posicionar la imagen en la parte superior */
-}
-
-/* Aplica los colores y tipos de letra del título y botón */
-.left-content h1 {
-  color: #e63946;
-  font-size: 2em;
-}
-
-.left-content h2 {
-  color: #333;
-  font-size: 1.5em;
-}
-
-.left-content p {
-  color: #333;
-  font-size: 1em;
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0; /* Elimina los rellenos por defecto */
+  /* Agrega más estilos según sea necesario */
 }
 
 .left-content button {
   background-color: #e63946;
   color: white;
-  font-size: 1em;
+  padding: 10px 20px; /* Ajusta el relleno para que el botón sea más grande */
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor a pointer */
 }
 
 .left-content button:hover {
-  background-color: #c72c41;
+  background-color: #c72c41; /* Color al pasar el ratón */
+}
+
+/* Media queries para la responsividad */
+@media (max-width: 768px) {
+  .bootcamps-container {
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    height: auto; /* Permite que el contenedor crezca con el contenido */
+  }
+
+  .left-content,
+  .right-content {
+    flex: none; /* Desactiva la flexibilidad para que tomen el ancho del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 40px; /* Añade relleno nuevamente */
+  }
+
+  .background-image {
+    height: auto; /* Permite que la imagen se ajuste a su altura natural */
+    margin-bottom: 0; /* Elimina el margen adicional si lo hubiera */
+  }
 }
