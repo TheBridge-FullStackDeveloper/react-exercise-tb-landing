@@ -1,52 +1,76 @@
-/* mi-landing-page/src/components/header/cursos/Cursos.css */
 .cursos-container {
     text-align: center;
     padding: 20px;
+    padding-left: 10px; /* Reduce el padding izquierdo si es necesario */
     background: #f0f0f0; /* O el color de fondo que desees */
-  }
-  
-  .cursos-container h1 {
+   
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 180px;
+}
+
+.cursos-container h1 {
     color: #333; /* Ajusta los colores como necesites */
-  }
-  
-  .cursos-container h2 {
+    margin-right: 880px;
+}
+
+.cursos-container h2 {
     margin-bottom: 20px;
-  }
-  
-  .cursos-grid {
+}
+
+.cursos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-  }
-  
-  .curso-card {
+    margin-left: 97px;
+    margin-right: 0px;
+    /* align-items: center; */
+}
+
+.curso-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .curso-card img {
+    text-align: center; /* Asegura que el contenido interno esté centrado */
+}
+
+.curso-card img {
     width: 100%; /* O el tamaño que prefieras */
     max-width: 120px; /* Ajusta esto según tu diseño */
     height: auto;
     margin-bottom: 15px;
-  }
-  
-  .curso-card h3 {
+}
+
+.curso-card h3 {
     color: #333;
     margin: 0;
-  }
-  
-  .curso-card span {
+}
+
+.curso-card span {
     display: block;
     margin-bottom: 15px;
-  }
-  
-  .curso-card p {
+}
+
+.curso-card p {
     color: #666;
     font-size: 14px;
+}
+
+/* Agrega este CSS a tu archivo Cursos.css */
+
+.bootcamps-title {
+    
+    margin-top: -40px; /* Ajusta el valor negativo según la cantidad de espacio que desees mover hacia arriba */
+  margin-bottom: 0; 
+    margin-left: -179px; /* Ajusta el valor negativo según la cantidad de espacio que desees mover hacia la izquierda */
   }
   

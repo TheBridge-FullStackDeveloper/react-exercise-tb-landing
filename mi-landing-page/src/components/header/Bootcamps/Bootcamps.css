@@ -1,12 +1,11 @@
 .bootcamps-container {
   display: flex;
   flex-direction: row;
-  align-items: stretch; /* Esto hará que los hijos se estiren para ocupar todo el contenedor */
-  max-width: 1400px;
-  margin: 0 auto; /* Esto centra tu contenedor en la página */
+  align-items: stretch;
+  margin: 0 auto;
   padding: 0;
   color: #333;
-  height: 495px; /* Establece una altura fija para que coincida con la imagen */
+  margin-top: 270px;
 }
 
 .left-content {
@@ -14,11 +13,62 @@
   padding: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   background-color: rgb(233, 230, 230);
-  flex-wrap: nowrap;
-  align-content: flex-start;
-  align-items: stretch;
+  max-width: 800px; /* Establece un ancho máximo para todo el contenido */
+  box-sizing: border-box; /* Asegura que padding no aumente el ancho */
+  margin-left: 2px; /* Alinea el contenido con el margen del contenedor padre */
+}
+
+/* Estilos para el título, subtítulo, párrafo y botón */
+.left-content h1,
+.left-content h2,
+.left-content p,
+.left-content button {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 600px; /* Asegura que todos los elementos sigan el mismo ancho máximo */
+}
+
+.left-content h1 {
+  font-size: 48px;
+  line-height: 1; /* Ajusta el interlineado si es necesario */
+  margin-bottom: 20px;
+}
+
+.left-content h2 {
+  /* Agrega estilos para h2 si es necesario */
+}
+
+.left-content p {
+  margin-bottom: 20px;
+}
+
+.left-content button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Añade un margen superior si es necesario */
+}
+
+.left-content button:hover {
+  background-color: #c72c41;
+}
+
+
+.title-first-line {
+  font-size: 48px; /* O el tamaño que prefieras para "Acelera tu" */
+  display: block; /* Esto hará que "Acelera tu" esté en su propia línea */
+  margin-bottom: 10px; /* Espacio entre "Acelera tu" y el resto del título */
+}
+
+.title-rest {
+  font-size: 36px; /* O el tamaño que prefieras para "carrera digital" */
+  /* No necesitas display: block aquí ya que queremos que continúe en línea con "tu" */
 }
 
 .right-content {
@@ -32,27 +82,7 @@
   object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
 }
 
-/* Estilos para el título, subtítulo, párrafo y botón */
-.left-content h1,
-.left-content h2,
-.left-content p,
-.left-content button {
-  margin: 0; /* Elimina los márgenes por defecto */
-  padding: 0; /* Elimina los rellenos por defecto */
-  /* Agrega más estilos según sea necesario */
-}
 
-.left-content button {
-  background-color: #e63946;
-  color: white;
-  padding: 10px 20px; /* Ajusta el relleno para que el botón sea más grande */
-  border: none; /* Elimina el borde */
-  cursor: pointer; /* Cambia el cursor a pointer */
-}
-
-.left-content button:hover {
-  background-color: #c72c41; /* Color al pasar el ratón */
-}
 
 /* Media queries para la responsividad */
 @media (max-width: 768px) {

@@ -1,4 +1,3 @@
- // mi-landing-page/src/components/header/cursos/Cursos.jsx
 import React, { useState, useEffect } from 'react';
 import data from '../../../data.json';
 import './Cursos.css';
@@ -13,8 +12,10 @@ const Cursos = () => {
 
   return (
     <section className="cursos-container">
-      <h1>{data.bootcamps.header}</h1>
-      <h2>{data.bootcamps.title}</h2>
+        <h2>{data.bootcamps.title}</h2>
+      <h1>Descubre nuestros</h1>
+      <h1 className="bootcamps-title">Bootcamps</h1>
+      
       <div className="cursos-grid">
         {cursos.map((curso) => (
           <div key={curso.name} className="curso-card">
@@ -27,6 +28,6 @@ const Cursos = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Cursos;
