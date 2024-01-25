@@ -11,8 +11,7 @@ function Bootcamps() {
     <div className="bootcamps-container">
       <div className="left-content">
         <h1>
-          <span className="title-first-line">{firstLine}</span>{' '}
-          <span className="title-rest">{restOfTitle.join(' ')}</span>
+         Acelera tu carrera digital
         </h1>
         <h2>{subheading}</h2>
         <p>{paragraph}</p>

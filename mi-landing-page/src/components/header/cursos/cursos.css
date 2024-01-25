@@ -1,28 +1,49 @@
 .cursos-container {
     text-align: center;
     padding: 20px;
-    padding-left: 10px; /* Reduce el padding izquierdo si es necesario */
-    background: #f0f0f0; /* O el color de fondo que desees */
-   
-}
-
-h2 {
+    background: #f0f0f0;
+  }
+  
+  /* Título principal de la sección */
+  .bootcamps-section-title {
     font-size: 1em;
     font-weight: bold;
     margin-block-start: 0;
     margin-block-end: 0.5em;
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-left: 180px;
-}
-
-.cursos-container h1 {
-    color: #333; /* Ajusta los colores como necesites */
-    margin-right: 880px;
-}
-
-.cursos-container h2 {
-    margin-bottom: 20px;
-}
+    text-align: center;
+    margin: 0 auto; 
+  }
+  
+/* Estilo para "Descubre nuestros" con la línea roja debajo */
+.discover-title {
+    color: #333;
+    font-size: 4em; /* Ajusta el tamaño de la fuente según necesites */
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    display: inline-block; /* Cambia a inline-block para permitir el pseudo-elemento */
+  }
+  
+  .discover-title::after {
+    content: '';
+    display: block;
+    width: 50%; /* Ancho de la línea roja, ajústalo según tu diseño */
+    height: 4px; /* Altura de la línea roja */
+    background-color: red; /* El color de la línea */
+    position: absolute;
+    bottom: -20px; /* Ajusta según la distancia que desees debajo de 'Descubre nuestros' */
+    left: 50%; /* Comienza desde la mitad */
+    transform: translateX(-50%); /* Centra la línea */
+  }
+  
+  /* Estilo para "Bootcamps" */
+  .bootcamps-main-title {
+    color: #333;
+    font-size: 4em; /* Debe ser del mismo tamaño que .discover-title */
+    font-weight: bold;
+    margin: 0;
+    display: inline; /* Alinea 'Bootcamps' en la misma línea que 'Descubre nuestros' */
+  }
 
 .cursos-grid {
     display: grid;
@@ -31,33 +52,59 @@ h2 {
     padding: 20px;
     margin-left: 97px;
     margin-right: 0px;
-    /* align-items: center; */
 }
 
 .curso-card {
+    position: relative;
     background: #fff;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center; /* Asegura que el contenido interno esté centrado */
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 30px; /* Asegura espacio para el botón '+ INFO' */
+}
+
+/* Botón '+ INFO' alineado con el borde inferior de curso-card */
+.info-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: red;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background: none; /* Sin color de fondo */
+    cursor: pointer;
 }
 
 .curso-card img {
-    width: 100%; /* O el tamaño que prefieras */
-    max-width: 120px; /* Ajusta esto según tu diseño */
-    height: auto;
-    margin-bottom: 15px;
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    top: -40px;
+    right: 0px;
 }
 
 .curso-card h3 {
     color: #333;
-    margin: 0;
+    margin-top: 0;
+    font-weight: bold;
+    width: 160px; /* Ajusta según sea necesario */
 }
 
-.curso-card span {
-    display: block;
+.curso-card .curso-info {
+    display: flex;
+    gap: 10px;
     margin-bottom: 15px;
+}
+
+.curso-card .curso-horas, .curso-card .curso-formato {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .curso-card p {
@@ -65,12 +112,7 @@ h2 {
     font-size: 14px;
 }
 
-/* Agrega este CSS a tu archivo Cursos.css */
-
-.bootcamps-title {
-    
-    margin-top: -40px; /* Ajusta el valor negativo según la cantidad de espacio que desees mover hacia arriba */
-  margin-bottom: 0; 
-    margin-left: -179px; /* Ajusta el valor negativo según la cantidad de espacio que desees mover hacia la izquierda */
-  }
-  
+/* Estilos para los íconos, si los tienes */
+.icono-horas, .icono-modalidad {
+    /* Tus estilos para los íconos aquí */
+}

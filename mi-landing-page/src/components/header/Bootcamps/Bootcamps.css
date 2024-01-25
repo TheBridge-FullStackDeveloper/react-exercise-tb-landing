@@ -13,12 +13,15 @@
   padding: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: rgb(233, 230, 230);
-  max-width: 800px; /* Establece un ancho máximo para todo el contenido */
-  box-sizing: border-box; /* Asegura que padding no aumente el ancho */
-  margin-left: 2px; /* Alinea el contenido con el margen del contenedor padre */
+  max-width: 870px;
+  box-sizing: border-box;
+  margin-left: 2px;
+  /* margin-bottom: 50px; */
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 /* Estilos para el título, subtítulo, párrafo y botón */
@@ -34,16 +37,43 @@
 
 .left-content h1 {
   font-size: 48px;
-  line-height: 1; /* Ajusta el interlineado si es necesario */
-  margin-bottom: 20px;
+  line-height: 1;
+  margin-bottom: 0; /* Se reduce o elimina el margen inferior para acercar los elementos */
+  width: 300px;
 }
 
+.title-first-line {
+  font-size: 48px; /* Tamaño para "Acelera" */
+  display: block; /* Esto mantendrá "Acelera" en su propia línea */
+  margin-bottom: 0; /* Se reduce o elimina el margen inferior para acercar "tu carrera digital" */
+}
+
+.title-rest {
+  font-size: 36px; /* Tamaño para "tu carrera digital" */
+  display: block; /* Esto hará que "tu carrera digital" esté en su propia línea */
+  margin-top: 20px; /* Añade un margen superior para separarlo ligeramente de "Acelera" si es necesario */
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+  text-align: left;
+  margin-left: 180px;
+  width: 380px;
+}
+
+
 .left-content h2 {
-  /* Agrega estilos para h2 si es necesario */
+  /* Añade estilos para h2 si es necesario */
+  margin-top: 20px; /* Añade un margen superior para separarlo de "tu carrera digital" */
 }
 
 .left-content p {
-  margin-bottom: 20px;
+  margin-top: 10px; /* Añade un margen superior para separarlo de "h2" si lo has agregado */
+  margin-bottom: 20px; /* Separación antes del botón */
+  width: 380px;
 }
 
 .left-content button {
@@ -52,23 +82,29 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin-top: 20px; /* Añade un margen superior si es necesario */
+  position: relative; /* Mantén el posicionamiento relativo */
+  top: 165px;
+
+  margin-top: 20px; /* Espacio adicional sobre el botón si es necesario */
 }
+
 
 .left-content button:hover {
   background-color: #c72c41;
 }
 
 
+
 .title-first-line {
   font-size: 48px; /* O el tamaño que prefieras para "Acelera tu" */
   display: block; /* Esto hará que "Acelera tu" esté en su propia línea */
-  margin-bottom: 10px; /* Espacio entre "Acelera tu" y el resto del título */
+  margin-bottom: 150px;
 }
 
 .title-rest {
   font-size: 36px; /* O el tamaño que prefieras para "carrera digital" */
   /* No necesitas display: block aquí ya que queremos que continúe en línea con "tu" */
+ 
 }
 
 .right-content {
