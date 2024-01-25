@@ -1,19 +1,26 @@
 .header {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  max-height: 1000px;
 }
 
 .headerInfo {
-    padding: 20px;
+  padding: 25px 200px 25px 200px; /* More padding on the right and left sides */
+  flex-basis: 100%;
 }
 
 .headerImage {
+  flex-basis: 100%;
+}
+
+#groupImage {
+  max-width: 800px;
 }
 
 button {
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
 }

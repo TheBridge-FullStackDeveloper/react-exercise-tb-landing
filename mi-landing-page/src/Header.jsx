@@ -18,8 +18,12 @@ function Header() {
           </p>
           <button>PIDE INFORMACIÓN</button>
         </div>
+
         <div className="headerImage">
-          <img src="https://www.pocketprep.com/wp-content/uploads/2021/03/Do-I-need-a-study-group_post-image-inline.jpg" />
+          <img
+            id="groupImage"
+            src="https://www.pocketprep.com/wp-content/uploads/2021/03/Do-I-need-a-study-group_post-image-inline.jpg"
+          />
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <hr></hr>
       <Bootcamps />
     </>
   );

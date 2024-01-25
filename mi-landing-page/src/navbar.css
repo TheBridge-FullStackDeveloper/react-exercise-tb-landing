@@ -1,6 +1,7 @@
 .navBar {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Eje X */
+  align-items: center; /* Eje Y */
   gap: 20px;
   background-color: rgb(15, 15, 41);
   height: 50px;

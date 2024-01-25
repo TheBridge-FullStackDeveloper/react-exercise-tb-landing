@@ -1,0 +1,50 @@
+.singleBootcamp {
+  border: 3px rgb(133, 126, 126) solid;
+  border-radius: 10px;
+  flex-basis: 100%;
+}
+
+.titleWithName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 10px;
+}
+
+#name {
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.hoursWithFormat {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+#hours,
+#format {
+  background-color: rgb(15, 15, 41);
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+#description {
+  color: grey;
+  margin: 10px;
+}
+
+#info {
+  color: red;
+  text-align: right;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px;
+}

@@ -11,6 +11,7 @@ function Bootcamps() {
       format: "Presencial/Remoto",
       description:
         "Aprenderás Python, sus librerías de análisis de datos y de Machine Learning y Deep para construir y desplegar modelos y mostrar su utilidad al negocio.",
+      color: "blue",
     },
     {
       name: "fs",
@@ -20,6 +21,7 @@ function Bootcamps() {
       format: "Presencial/Remoto",
       description:
         "Con nuestro bootcamp te transformarás en un desarrollador Web Full Stack. Aprende desde cero HTML, JavaScript node.JS y bases de datos. Acelera tus proyectos utilizando ReactJS, y conoce los fundamentos de DevOps para el despliegue y mantenimiento de tus proyectos.",
+      color: "yellow",
     },
     {
       name: "dm",
@@ -29,6 +31,7 @@ function Bootcamps() {
       format: "Presencial/Remoto",
       description:
         "Una aproximación práctica al Marketing Digital que te permitirá conocer las ultimas herramientas y los nuevos medios, con foco en la planificación, análisis y automatización para la optimización de resultados. * Becas L'Oréal Digital Marketing Ops",
+      color: "orange",
     },
     {
       name: "ux",
@@ -38,6 +41,7 @@ function Bootcamps() {
       format: "Presencial/Remoto",
       description:
         "Te familiarizarás con conceptos clave sobre experiencia de usuario: metodologías de investigación y análisis de datos, arquitectura de la información, ideación y principios del diseño visual y de experiencia de usuario. * Becas Opinno Digital Experience",
+      color: "green",
     },
   ];
 
@@ -46,9 +50,11 @@ function Bootcamps() {
       <Bootcamp
         key={singleCourse}
         title={singleCourse.title}
+        name={singleCourse.name}
         hours={singleCourse.hours}
         format={singleCourse.format}
         description={singleCourse.description}
+        color={singleCourse.color}
       />
     );
   });
@@ -56,7 +62,9 @@ function Bootcamps() {
   return (
     <>
       <h2>EXPERIENCIAS FORMATIVAS QUE CAMBIARÁN TU CARRERA</h2>
-      <h1>Descubre nuestros Bootcamps</h1>
+      <h1>
+        Descubre nuestros<br></br> Bootcamps
+      </h1>
       <div class="bootcampsCards">{BootcampsArray}</div>
     </>
   );
