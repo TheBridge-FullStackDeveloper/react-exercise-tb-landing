@@ -1,5 +1,7 @@
 import React from "react";
-import data from "../../data.json";
+import data from "../../../data.json";
+
+import ("./Navbar.css")
 
 const img = data.navbar.img;
 
@@ -14,11 +16,11 @@ function Navbar() {
     <>
       <nav>
         <img src={img} alt="" />
-        <h4>{link0}</h4>
-        <h4>{link1}</h4>
-        <h4>{link2}</h4>
-        <h4>{link3}</h4>
-        <h4>{link4}</h4>
+        <h5>{link0}</h5>
+        <h5>{link1}</h5>
+        <h5>{link2}</h5>
+        <h5>{link3}</h5>
+        <h5>{link4}</h5>
       </nav>
     </>
   );

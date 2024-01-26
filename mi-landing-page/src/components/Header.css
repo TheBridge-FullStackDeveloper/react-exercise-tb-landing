@@ -1,0 +1,45 @@
+.header {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+
+  .mainHeader {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    .textHeader {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        text-wrap: wrap;
+        max-width: 400px;
+      }
+
+
+      #footerHeader {
+        background-color: rgb(210, 54, 54);
+        color: white;
+
+
+        font-size: 17px;
+        width: 250px;
+
+
+      }
+      
+    }
+
+    .imgHeader {
+      width: auto;
+      height: 600px;
+    }
+  }
+
+  .footerHeader {
+    /* background-color: blueviolet; */
+  }
+}

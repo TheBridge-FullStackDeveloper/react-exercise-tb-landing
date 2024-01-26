@@ -1,0 +1,16 @@
+nav {
+  background-color: rgb(37, 25, 44);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  column-gap: 20px;
+   
+
+  img {
+    width: 200px;
+  }
+
+
+}

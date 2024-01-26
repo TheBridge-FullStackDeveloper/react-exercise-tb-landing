@@ -1,22 +1,25 @@
 import { useState } from "react";
-import Cards from "./Cards.jsx";
-import Navbar from "./Navbar.jsx";
-import Header from "./Header.jsx";
-import Bootcamps from "./Bootcamps.jsx"
+import Navbar from "./components/Navbar.jsx";
+import Header from "./components/Header.jsx";
+import Bootcamps from "./components/Bootcamps.jsx"
 
 import "./App.css";
 
 function App() {
-
   return (
     <>
+    
       <Navbar />
+
+      <div className="body2">
 
       <Header />
 
+      <br />
+
       <Bootcamps />
 
-      
+      </div>
     </>
   );
 }

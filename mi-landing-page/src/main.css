@@ -1,0 +1,68 @@
+body {
+  /* background-color: rgb(118, 118, 118); */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: rgba(233, 233, 233, 0.947);
+
+  padding-bottom: 200px;
+
+}
+
+.body2 {
+  margin-left:20vh;
+  margin-right:20vh;
+}
+
+
+*{
+  box-sizing: border-box;
+  /* border: 0.5px solid rgba(0, 0, 0, 0.402); */
+}
+
+h2{
+  font-size: 4rem;
+ 
+
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+   font-weight: 150;
+}
+
+
+h6 {
+    height: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 550;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+/* ================ NAV  =================*/
+
+
+
+
+/* ================ HEADER  =================*/
+
+
+
+/* ================ BOOTCAMP  =================*/
+
+
+
+
