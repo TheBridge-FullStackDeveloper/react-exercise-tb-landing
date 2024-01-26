@@ -13,46 +13,71 @@
     text-align: center;
     margin: 0 auto; 
   }
+  .bootcamp-subtitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 1em;
+    letter-spacing: 0.05em;
+    /* text-decoration: underline; */
+    text-decoration-color: #000;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    width: 1000px;
+    margin-left: 300px;
+}
   
+
+
+
+
+/* Contenedor principal de la sección de títulos */
+.bootcamps-section-title {
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding-left: 20px; /* Ajusta el relleno a tu gusto para mover los títulos a la izquierda */
+  position: relative; /* Posicionamiento relativo para los pseudo-elementos */
+}
+
+/* Estilo para "Descubre nuestros" y "Bootcamps" */
+.discover-title, .bootcamps-main-title {
+  color: #333;
+  font-size: 3em; /* Ajusta el tamaño de la fuente a tus necesidades */
+  font-weight: bold;
+  margin: 0; /* Elimina el margen automático */
+  text-align: left; /* Alinea el texto a la izquierda */
+  display: block; /* Establece cada título como un bloque para que ocupen su propia línea */
+  margin-left: 300px;
+}
+
 /* Estilo para "Descubre nuestros" con la línea roja debajo */
-.discover-title {
-    color: #333;
-    font-size: 4em; /* Ajusta el tamaño de la fuente según necesites */
-    font-weight: bold;
-    margin: 0;
-    position: relative;
-    display: inline-block; /* Cambia a inline-block para permitir el pseudo-elemento */
-  }
-  
-  .discover-title::after {
-    content: '';
-    display: block;
-    width: 50%; /* Ancho de la línea roja, ajústalo según tu diseño */
-    height: 4px; /* Altura de la línea roja */
-    background-color: red; /* El color de la línea */
-    position: absolute;
-    bottom: -20px; /* Ajusta según la distancia que desees debajo de 'Descubre nuestros' */
-    left: 50%; /* Comienza desde la mitad */
-    transform: translateX(-50%); /* Centra la línea */
-  }
-  
-  /* Estilo para "Bootcamps" */
-  .bootcamps-main-title {
-    color: #333;
-    font-size: 4em; /* Debe ser del mismo tamaño que .discover-title */
-    font-weight: bold;
-    margin: 0;
-    display: inline; /* Alinea 'Bootcamps' en la misma línea que 'Descubre nuestros' */
-  }
+.discover-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 18px;
+  background-color: red;
+  position: relative;
+  bottom: 10px;
+  left: -50px;
+}
+
+
+
+
 
 .cursos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin-left: 97px;
-    margin-right: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define 3 columnas */
+  gap: 20px;
+  padding: 20px;
+  /* Resto del CSS */
 }
+
+
+
+
 
 .curso-card {
     position: relative;
@@ -61,6 +86,8 @@
     padding: 20px;
     text-align: left;
     padding-bottom: 30px; /* Asegura espacio para el botón '+ INFO' */
+    height: 400px;
+    width: 400px;
 }
 
 /* Botón '+ INFO' alineado con el borde inferior de curso-card */
@@ -115,4 +142,15 @@
 /* Estilos para los íconos, si los tienes */
 .icono-horas, .icono-modalidad {
     /* Tus estilos para los íconos aquí */
+}
+
+.curso-card-with-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 20px); /* Ajusta este valor para cambiar la posición vertical de la línea */
+  height: 2px; /* Altura de la línea */
+  background-color: grey; /* Color de la línea */
+  z-index: 1; /* Asegúrate de que la línea esté por encima de los elementos del fondo */
 }

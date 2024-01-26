@@ -6,18 +6,26 @@ const Cursos = () => {
   const [cursos, setCursos] = useState([]);
 
   useEffect(() => {
-    setCursos(data.bootcamps.courses);
+    const ordenPredefinido = ["ds", "ux", "fs", "dm"]; // El orden en el que quieres los cursos
+    const cursosOrdenados = ordenPredefinido.map(id =>
+      data.bootcamps.courses.find(curso => curso.name === id)
+    );
+    setCursos(cursosOrdenados);
   }, []);
 
   return (
     <section className="cursos-container">
-        <h2 className="bootcamp-subtitle">{data.bootcamps.title}</h2>
-        <h1 className="discover-title">Descubre nuestros</h1>
-        <h1 className="bootcamps-main-title">Bootcamps</h1>
+      <h2 className="bootcamp-subtitle">{data.bootcamps.title}</h2>
+      <h1 className="discover-title">Descubre nuestros</h1>
+      <h1 className="bootcamps-main-title">Bootcamps</h1>
       
-        <div className="cursos-grid">
-          {cursos.map((curso) => (
-            <div key={curso.name} className="curso-card">
+      <div className="cursos-grid">
+        {cursos.map((curso, index) => {
+          // Agrega la clase 'curso-card-with-line' a las tres primeras tarjetas
+          const cardClassName = `curso-card ${index < 3 ? 'curso-card-with-line' : ''}`;
+
+          return (
+            <div key={curso.name} className={cardClassName}>
               <img src={curso.img} alt={curso.title} />
               <h3>{curso.title}</h3>
               <div className="curso-info">
@@ -31,8 +39,9 @@ const Cursos = () => {
               <p>{curso.description}</p>
               <a href="/info" className="info-button">+ INFO</a>
             </div>
-          ))}
-        </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

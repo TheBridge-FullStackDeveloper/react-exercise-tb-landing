@@ -84,6 +84,7 @@ h2 {
   cursor: pointer;
   position: relative; /* Mantén el posicionamiento relativo */
   top: 165px;
+  margin-bottom: 200px;
 
   margin-top: 20px; /* Espacio adicional sobre el botón si es necesario */
 }
