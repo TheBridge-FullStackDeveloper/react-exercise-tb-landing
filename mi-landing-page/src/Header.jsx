@@ -6,10 +6,10 @@ function Header() {
       <div className="header">
         <div className="headerInfo">
           <h1>Acelera tu carrera digital</h1>
-          <h2>
+          <h4>
             En una época de cambios y desarrollo tecnológico, tu formación no
             puede perder el ritmo.
-          </h2>
+          </h4>
           <p>
             Cuando eliges un bootcamp en The Bridge estás dando el paso
             definitivo hacia una de las profesiones del futuro más demandadas en

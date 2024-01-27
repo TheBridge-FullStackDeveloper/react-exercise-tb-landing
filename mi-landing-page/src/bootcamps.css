@@ -1,10 +1,11 @@
-h1, h2 {
-  margin: 20px;
+.red {
+  text-decoration-color: red;
+  text-decoration-thickness: 10px;
 }
 
 .bootcampsCards {
   display: flex;
   flex-direction: row;
-  margin: 20px;
-  gap: 10px;
+  margin: 50px;
+  gap: 20px;
 }

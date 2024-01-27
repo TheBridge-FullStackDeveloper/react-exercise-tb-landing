@@ -4,10 +4,14 @@ function Bootcamp(props) {
   return (
     <div className="singleBootcamp">
       <div className="titleWithName">
-        <h3>{props.title}</h3>
-        <p id="name" style={{ backgroundColor: props.color }}>
-          {props.name}
-        </p>
+        <h2 style={{ margin: 10 }}>{props.title}</h2>
+        <img
+          className="imageLogo"
+          src={props.img}
+          alt={props.img}
+          height={125}
+          width={125}
+        />
       </div>
 
       <div className="hoursWithFormat">
@@ -16,7 +20,7 @@ function Bootcamp(props) {
       </div>
 
       <p id="description">{props.description}</p>
-      <p id="info">+ INFO</p>
+      <div id="info">+ INFO</div>
     </div>
   );
 }

@@ -5,8 +5,9 @@
 }
 
 .headerInfo {
-  padding: 25px 200px 25px 200px; /* More padding on the right and left sides */
+  margin: 25px 250px 25px 250px; /* More padding on the right and left sides */
   flex-basis: 100%;
+  font-size: 18px;
 }
 
 .headerImage {
@@ -14,7 +15,7 @@
 }
 
 #groupImage {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 button {

@@ -45,26 +45,31 @@ function Bootcamps() {
     },
   ];
 
-  const BootcampsArray = courses.map((singleCourse) => {
+  const BootcampsArray = courses.map((singleCourse, index) => {
     return (
       <Bootcamp
-        key={singleCourse}
+        key={index}
         title={singleCourse.title}
         name={singleCourse.name}
         hours={singleCourse.hours}
         format={singleCourse.format}
         description={singleCourse.description}
         color={singleCourse.color}
+        img={singleCourse.img}
       />
     );
   });
 
   return (
     <>
-      <h2>EXPERIENCIAS FORMATIVAS QUE CAMBIARÁN TU CARRERA</h2>
-      <h1>
-        Descubre nuestros<br></br> Bootcamps
+      <h4 style={{ marginLeft: 50 }}>
+        EXPERIENCIAS FORMATIVAS QUE CAMBIARÁN TU CARRERA
+      </h4>
+
+      <h1 style={{ marginLeft: 50 }}>
+        <u className="red">Descubre nuestros</u><br></br>Bootcamps
       </h1>
+
       <div class="bootcampsCards">{BootcampsArray}</div>
     </>
   );
