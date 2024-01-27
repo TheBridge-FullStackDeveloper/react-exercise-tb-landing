@@ -50,12 +50,10 @@ function Bootcamps() {
       <Bootcamp
         key={index}
         title={singleCourse.title}
-        name={singleCourse.name}
+        img={singleCourse.img}
         hours={singleCourse.hours}
         format={singleCourse.format}
         description={singleCourse.description}
-        color={singleCourse.color}
-        img={singleCourse.img}
       />
     );
   });
@@ -67,7 +65,8 @@ function Bootcamps() {
       </h4>
 
       <h1 style={{ marginLeft: 50 }}>
-        <u className="red">Descubre nuestros</u><br></br>Bootcamps
+        <u className="red">Descubre nuestros</u>
+        <br></br>Bootcamps
       </h1>
 
       <div class="bootcampsCards">{BootcampsArray}</div>
