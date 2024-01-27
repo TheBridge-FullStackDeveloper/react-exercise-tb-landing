@@ -1,0 +1,122 @@
+.navbar {
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.dropdownItems {
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logoImg {
+  height: 40px;
+  width: auto;
+}
+
+#header-info {
+  width: 20dvw;
+  min-width: 200px;
+  padding: 10;
+}
+
+#header-image {
+  max-height: fit-content;
+}
+
+.header-photo {
+  height: 500px;
+  width: auto;
+}
+
+.header-button {
+  color: white;
+  background-color: #f44336;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#bootcamp-section {
+  display: flex;
+  justify-content: center;
+}
+#bootcamp-info{
+  display: flex;
+  flex-direction: column;
+  width: 80dvw;
+}
+
+#flex-bootcamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.bootcamp-courses {
+  width: 250px;
+  height: 300px;
+  margin: 50px;
+  padding: 15px;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  
+}
+
+.course-img {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  top: -10px;
+  right: -10px
+}
+
+.hours, .format {
+  display: inline;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.info-anchor {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
