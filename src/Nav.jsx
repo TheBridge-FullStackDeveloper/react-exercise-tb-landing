@@ -1,28 +1,45 @@
-export default function NavBar() {
-    return (
-        <nav
+import React from "react";
+import data from "../data.json";
+
+const NavBar = () => {
+  const { navbar } = data;
+
+  return (
+    <nav
+      style={{
+        backgroundColor: "indigo",
+        padding: "5px",
+      }}
+    >
+      <div
         style={{
-          backgroundColor: "purple",
-          padding: "5px",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
+        <img
+          src={navbar.img}
+          alt="Navbar Logo"
+          style={{ height: "50px", marginRight: "10px" }}
+        />
         <ul
           style={{
             display: "flex",
             listStyle: "none",
             alignItems: "center",
-            justifyContent: "space-between",
-            color: "white",
           }}
         >
-          <img src="public/logo.png" alt="" style={{ width: "200px" }} />
-          <li>The Bridge</li>
-          <li>Cursos</li>
-          <li>Dónde estudiar</li>
-          <li>Financiación y becas</li>
-          <li>Empresas e instituciones</li>
-          <li>Sobre nosotros</li>
+          {navbar.links.map((link, index) => (
+            <li key={index} style={{ marginRight: "50px" }}>
+              <a href="" style={{ color: "white", textDecoration: "none" }}>
+                {link}
+              </a>
+            </li>
+          ))}
         </ul>
-      </nav>
-    )
-}
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
