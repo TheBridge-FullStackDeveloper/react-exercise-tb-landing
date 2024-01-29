@@ -1,0 +1,142 @@
+.bootcamps-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+  margin-top: 270px;
+}
+
+.left-content {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(233, 230, 230);
+  max-width: 870px;
+  box-sizing: border-box;
+  margin-left: 2px;
+  /* margin-bottom: 50px; */
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Estilos para el título, subtítulo, párrafo y botón */
+.left-content h1,
+.left-content h2,
+.left-content p,
+.left-content button {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  max-width: 600px; /* Asegura que todos los elementos sigan el mismo ancho máximo */
+}
+
+.left-content h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0; /* Se reduce o elimina el margen inferior para acercar los elementos */
+  width: 300px;
+}
+
+.title-first-line {
+  font-size: 48px; /* Tamaño para "Acelera" */
+  display: block; /* Esto mantendrá "Acelera" en su propia línea */
+  margin-bottom: 0; /* Se reduce o elimina el margen inferior para acercar "tu carrera digital" */
+}
+
+.title-rest {
+  font-size: 36px; /* Tamaño para "tu carrera digital" */
+  display: block; /* Esto hará que "tu carrera digital" esté en su propia línea */
+  margin-top: 20px; /* Añade un margen superior para separarlo ligeramente de "Acelera" si es necesario */
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+  text-align: left;
+  margin-left: 180px;
+  width: 380px;
+}
+
+
+.left-content h2 {
+  /* Añade estilos para h2 si es necesario */
+  margin-top: 20px; /* Añade un margen superior para separarlo de "tu carrera digital" */
+}
+
+.left-content p {
+  margin-top: 10px; /* Añade un margen superior para separarlo de "h2" si lo has agregado */
+  margin-bottom: 20px; /* Separación antes del botón */
+  width: 380px;
+}
+
+.left-content button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Mantén el posicionamiento relativo */
+  top: 165px;
+  margin-bottom: 200px;
+
+  margin-top: 20px; /* Espacio adicional sobre el botón si es necesario */
+}
+
+
+.left-content button:hover {
+  background-color: #c72c41;
+}
+
+
+
+.title-first-line {
+  font-size: 48px; /* O el tamaño que prefieras para "Acelera tu" */
+  display: block; /* Esto hará que "Acelera tu" esté en su propia línea */
+  margin-bottom: 150px;
+}
+
+.title-rest {
+  font-size: 36px; /* O el tamaño que prefieras para "carrera digital" */
+  /* No necesitas display: block aquí ya que queremos que continúe en línea con "tu" */
+ 
+}
+
+.right-content {
+  flex: 1; /* Toma la mitad del espacio, igual que left-content */
+  padding: 0; /* No padding para que la imagen pueda llenar todo el espacio */
+}
+
+.background-image {
+  width: 100%; /* Ocupa todo el ancho de right-content */
+  height: 100%; /* Ocupa toda la altura de right-content */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+
+
+/* Media queries para la responsividad */
+@media (max-width: 768px) {
+  .bootcamps-container {
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    height: auto; /* Permite que el contenedor crezca con el contenido */
+  }
+
+  .left-content,
+  .right-content {
+    flex: none; /* Desactiva la flexibilidad para que tomen el ancho del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 40px; /* Añade relleno nuevamente */
+  }
+
+  .background-image {
+    height: auto; /* Permite que la imagen se ajuste a su altura natural */
+    margin-bottom: 0; /* Elimina el margen adicional si lo hubiera */
+  }
+}
