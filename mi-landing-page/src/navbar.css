@@ -1,0 +1,15 @@
+.navBar {
+  display: flex;
+  justify-content: center; /* Eje X */
+  align-items: center; /* Eje Y */
+  gap: 20px;
+  background-color: rgb(15, 15, 41);
+  height: 50px;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.listItem {
+  list-style-type: none;
+}

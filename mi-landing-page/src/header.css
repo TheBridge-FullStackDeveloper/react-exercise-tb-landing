@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  max-height: 1000px;
+}
+
+.headerInfo {
+  margin: 25px 250px 25px 250px; /* More padding on the right and left sides */
+  flex-basis: 100%;
+  font-size: 18px;
+}
+
+.headerImage {
+  flex-basis: 100%;
+}
+
+#groupImage {
+  max-width: 600px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+}

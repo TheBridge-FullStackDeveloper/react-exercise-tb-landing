@@ -1,0 +1,11 @@
+.red {
+  text-decoration-color: red;
+  text-decoration-thickness: 10px;
+}
+
+.bootcampsCards {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  gap: 20px;
+}
