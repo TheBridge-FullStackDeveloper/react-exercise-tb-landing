@@ -1,62 +1,88 @@
+# 🚀 React | Landing Page
 
-# React | Landing Page
+## 🛠️ Configuración Inicial
 
-Este proyecto es un ejercicio práctico para desarrollar una landing page utilizando React. A lo largo de este tutorial, aprenderás a estructurar tu proyecto, crear componentes reutilizables y a manejar las dependencias necesarias utilizando Vite.
+### 1️⃣ **Configuración del Proyecto**
 
-## Configuración Inicial
+#### Crear el Proyecto con Vite
 
-### Primera Iteración: Creación y Configuración del Proyecto
+Configura tu proyecto en el directorio actual utilizando Vite con el siguiente comando:
 
-1. **Creación del Proyecto con Vite**
+```sh
+npm create vite@latest . -- --template react
+```
 
-   Para comenzar, crea un nuevo proyecto React utilizando Vite. Vite es una herramienta de compilación moderna que proporciona un entorno de desarrollo más rápido. En tu terminal, ejecuta el siguiente comando:
+Esto inicializará un proyecto React con Vite en el directorio actual, sin crear subcarpetas adicionales.
 
-   ```sh
-   npm create vite@latest mi-landing-page -- --template react
-   ```
+#### Instalar Dependencias
 
-   Esto creará una nueva carpeta llamada `mi-landing-page` con una plantilla inicial de React configurada por Vite.
+Instala las dependencias necesarias para tu proyecto con:
 
-2. **Instalación de Dependencias**
+```sh
+npm install
+```
 
-   Navega a tu nuevo directorio de proyecto y ejecuta la instalación de dependencias:
+#### Iniciar el Servidor de Desarrollo
 
-   ```sh
-   cd mi-landing-page
-   npm install
-   ```
+Ejecuta el servidor de desarrollo para visualizar tu proyecto:
 
-   Esto instalará todas las dependencias necesarias para tu proyecto.
+```sh
+npm run dev
+```
 
-3. **Arranque del Servidor de Desarrollo**
+Abre tu navegador y visita `http://localhost:3000` para ver tu proyecto en acción.
 
-   Para visualizar la landing page durante el desarrollo, arranca el servidor de desarrollo de Vite. Ejecuta el siguiente comando:
+---
 
-   ```sh
-   npm run dev
-   ```
+## 💻 Desarrollo de la Landing Page
 
-   Una vez que el servidor esté funcionando, podrás ver tu proyecto en `http://localhost:3000`.
+![Diseño de la Landing Page](https://user-images.githubusercontent.com/33903092/131349832-76642727-2460-4d26-8a82-9c8bba8f5e31.png)
 
-## Desarrollo de la Landing Page
+### 2️⃣ **Creación de Componentes**
 
-### Segunda Iteración: Creación de Componentes
+#### Analizar la Estructura
 
-1. **Análisis de la Estructura**
+Observa el diseño objetivo de la landing page (puedes usar una imagen de referencia). Tu tarea es replicar este diseño dividiéndolo en componentes reutilizables.
 
-   Observa la siguiente imagen que representa el diseño objetivo para la landing page. Tu tarea es replicar este diseño creando componentes en React.
+#### Planificar los Componentes
 
-   ![Diseño de la Landing Page](https://user-images.githubusercontent.com/33903092/131349832-76642727-2460-4d26-8a82-9c8bba8f5e31.png)
+Haz una planificación inicial para identificar los elementos del diseño que pueden convertirse en componentes. Responde a preguntas como:
 
-2. **Planificación de Componentes**
+- ¿Qué elementos se repiten y pueden reutilizarse?
+- ¿Cómo estructurarás el CSS para un mantenimiento más sencillo?
+- ¿Qué props serán necesarias para que los componentes sean dinámicos?
 
-   Analiza el diseño y planifica cómo dividirlo en componentes reutilizables. Algunas preguntas que te pueden ayudar son:
+#### Implementar los Componentes
 
-   - ¿Qué elementos se repiten y podrían ser un único componente?
-   - ¿Cómo puedes estructurar el CSS para que sea fácil de mantener?
-   - ¿Qué props necesitarán los componentes para ser dinámicos y reutilizables?
+1. Crea los componentes necesarios en la carpeta `src/components`.
+2. Sigue las mejores prácticas de React:
+   - Usa nombres descriptivos para tus componentes.
+   - Asegúrate de que cada componente sea modular y reutilizable.
+3. Prueba cada componente individualmente para verificar su correcto funcionamiento.
 
-3. **Implementación**
+#### Ejemplo de Estructura de Componentes
 
-   Una vez planificado, comienza a crear los componentes dentro de la carpeta `src`. Recuerda seguir las mejores prácticas de React y asegúrate de testear cada componente individualmente para verificar su funcionamiento.
+```plaintext
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── HeroSection.jsx
+│   ├── Features.jsx
+│   ├── Footer.jsx
+```
 
+#### Estilización
+
+Crea una carpeta `styles` en `src` para mantener tus archivos CSS organizados:
+
+```plaintext
+src/
+├── styles/
+│   ├── global.css
+│   ├── header.css
+│   ├── heroSection.css
+│   ├── features.css
+│   ├── footer.css
+```
+
+Importa los estilos en cada componente según sea necesario.
