@@ -1,0 +1,102 @@
+.contenedor-bootcamps{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 1rem auto;
+}
+.contenedor-bootcamps p{
+    font-family: "Futura Std Medium";
+    font-size: 0.8rem;
+    color:#333;
+}
+.contenedor-bootcamps h2{
+    font-family: "Futura Std Bold";
+    font-size: 2.5rem;
+    color: #333;
+    width: 60%;
+    position: relative;
+    margin-bottom:2rem;
+    margin-top:1rem
+}
+.contenedor-bootcamps h2::before{
+    content: "";
+    position: absolute;
+    background-color: #E55052;
+    width: 300%;
+    height: 15px;
+    top: 1.9rem;
+    right: 0;
+    z-index: -1;
+}
+
+.bootcamps{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(auto);
+    gap: 1rem;
+}
+.cart{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #33333334;
+    padding: 0.7rem;
+    position: relative;
+    color: #333
+}
+
+.cart h1{
+    font-family: "Futura Std Bold";
+    font-size: 1.1rem;
+    width: 70%;
+    margin-bottom:3rem;
+    position:absolute;
+    
+}
+.cart img{
+    position:absolute;
+    top:-0.5rem;
+    right: -0.5rem;
+    width: 70px;
+    height: 70px;
+}
+.contenedor-iconos{
+    display: flex;
+    gap: 0.5rem;
+    margin-top:5rem;
+    margin-bottom:1.5rem
+}
+.cart span{
+    font-family:"Futura Std Medium";
+    font-size:0.7rem;
+    border-radius: 5px;
+    padding:0.3rem 0.4rem;
+    background-color: #20172A;
+    color:#ddd;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cart .hours::before{
+    content: url("data:image/svg+xml;charset=UTF-8, <svg  width='1rem' height='1rem' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><g fill='white'><path d='M17.029 8.016a1 1 0 1 0-2 0v6.277A1.988 1.988 0 0 0 16.03 18c.364 0 .706-.098.999-.269l3.669 2.119a1 1 0 0 0 1-1.732l-3.68-2.124a1.99 1.99 0 0 0-.99-1.704z'/><path d='M30 16c0-7.732-6.268-14-14-14S2 8.268 2 16s6.268 14 14 14s14-6.268 14-14m-3 0c0 6.075-4.925 11-11 11S5 22.075 5 16S9.925 5 16 5s11 4.925 11 11'/></g></svg>");
+    margin-right:0.7rem
+}
+.cart .format::before{
+    content: url("data:image/svg+xml;charset=UTF-8, <svg width='1rem' height='1rem' viewBox='0 0 23 23' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='white' stroke-width='2'><path d='M4 10.143C4 5.646 7.582 2 12 2s8 3.646 8 8.143c0 4.462-2.553 9.67-6.537 11.531a3.45 3.45 0 0 1-2.926 0C6.553 19.812 4 14.606 4 10.144Z'/><circle cx='12' cy='10' r='3'/></g></svg>");
+    margin-right:0.7rem
+}
+
+.cart .description{
+    color: #b1b1b1;
+    font-family: "Futura Std Medium";
+    margin-bottom:4rem
+}
+.cart .info{
+    font-family:"Futura Std Bold";
+    font-size: 0.75rem;
+    position:absolute;
+    bottom: 0.5rem;
+    right:0.5rem;
+    color: #E55052;
+    cursor: pointer;
+}
+
