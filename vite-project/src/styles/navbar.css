@@ -3,3 +3,7 @@ nav {
     color: white;
     padding: 1em;
 }
+
+nav a {
+    margin-right: 10px; /* Adjust the value as needed */
+  }

@@ -1,9 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
-import data from '../data/data.json';
 
-function Header() {
-  const { title, subheading, paragraph } = data.header;
+function Header({ title, subheading, paragraph }) {
   return (
     <header>
       <h1>{title}</h1>
