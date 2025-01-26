@@ -1,0 +1,33 @@
+/* App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px 0;
+}
+
+a {
+  color: #0062cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
