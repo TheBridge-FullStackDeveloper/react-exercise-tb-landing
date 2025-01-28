@@ -1,0 +1,15 @@
+:root {
+    --white: #efefef;
+    --main-red: #D13E30;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+ body {
+    font-family: 'Nunito', sans-serif;
+ }
+
