@@ -1,0 +1,64 @@
+.hero {
+    display: flex;
+}
+
+.hero-child-1 {
+    flex: 1;
+    padding: 2em;
+    border: solid black 1px;
+    padding-bottom: 0;
+}
+
+.child-1-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.child-1-content > h1 {
+    font-size: 4em;
+    position: relative;
+}
+
+.child-1-content > h1::after {
+    content: "•";
+    color: var(--main-red);
+    margin-left: 0.1em;
+    vertical-align: middle;
+}
+
+
+
+.child-1-content > button {
+    background-color: var(--main-red);
+    border: none;
+    max-width: 15em;
+    color: var(--white);
+    padding: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.hero-child-2 {
+    flex: 1;
+    border: solid black 1px;
+    border-left: none;
+    background-image: url('/img/hero.png');
+}
+
+@media (max-width: 992px) {
+    .main-nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-child-2 {
+        display: none;
+    }
+}

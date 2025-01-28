@@ -1,0 +1,52 @@
+:root {
+    --nav-background: #21172A;
+}
+
+
+.main-nav {
+    background-color: var(--nav-background);
+    color: var(--white);
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav img {
+    height: 1.2em;
+}
+
+.main-nav ul {
+    display: flex;
+    direction: row;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+@media (max-width: 992px) {
+    .main-nav ul {
+        display: none;
+    }
+}
+
+.main-nav ul, .main-nav li {
+    list-style: none;
+}
+
+.main-nav li {
+    position: relative;
+    text-transform: lowercase;
+    padding-right: 1em;
+}
+
+.main-nav li::first-letter {
+    text-transform: uppercase;
+}
+
+.main-nav li::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+}
