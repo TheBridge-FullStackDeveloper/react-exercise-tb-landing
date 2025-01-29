@@ -1,0 +1,37 @@
+.bootcamp-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .bootcamp-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .bootcamp-icon {
+    font-size: 2rem;
+  }
+  
+  .bootcamp-card h2 {
+    color: #222;
+    font-size: 1.5rem;
+  }
+  
+  .bootcamp-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .mode {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
