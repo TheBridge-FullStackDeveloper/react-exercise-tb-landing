@@ -1,0 +1,14 @@
+.newfeatureTitle {
+    color: brown;
+}
+.newfeatureCard {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.newfeatureButton {
+    margin-left: auto;
+    color: black;
+
+}

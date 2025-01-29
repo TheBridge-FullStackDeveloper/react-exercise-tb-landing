@@ -1,0 +1,66 @@
+.hero {
+padding: var(--space-6) 0;
+background: linear-gradient(to bottom right, var(--primary), var(--primary-dark));
+color: white;
+}
+
+.heroContent {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: var(--space-4);
+
+}
+
+.title {
+font-size: clamp(2rem, 5vw, 4rem);
+font-weight: 800;
+line-height: 1.1;
+}
+
+.subtitle {
+font-size: clamp(1.1rem, 2vw, 1.5rem);
+max-width: 600px;
+opacity: 0.9;
+}
+
+.cta {
+margin-top: var(--space-4);
+padding: var(--space-3) var(--space-5);
+background: var(--accent);
+color: white;
+border: none;
+border-radius: 9999px;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+.cta:hover {
+transform: translateY(-2px);
+}
+.hero-img {
+    background-image: url("/img/image.png");
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+.hero-section {
+    display: flex;
+    height: 600px;
+}
+.hero-content {
+    
+    padding: 1px;
+    align-content: space-between;
+    flex: 1;
+    display: flex; /* Asegura que el contenido se alinee correctamente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+}
+.inf-boton {
+    background-color: red;
+    color: white;
+}
