@@ -1,0 +1,106 @@
+
+.bootcamps {
+    border: .5px solid #20162b;
+  }
+  
+  
+  .title {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-size: 1.3rem;
+  }
+  
+  .header {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    margin-block-end: 3rem;
+    margin-block-start: 2rem;
+    margin-inline-end: 1rem;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 25%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 16px 0 16px 16px;
+    margin: 16px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .card-img {
+    width: 8vw;
+    height: auto;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+  }
+  
+  .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-content h2 {
+    height: 60px;
+    text-align: start;
+    font-family: "FuturaBold";
+    color: #20162b;
+    margin-inline-end: 7rem;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .hours-format {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .square {
+    background-color: #20162b;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+  }
+  
+  .square p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .description {
+    color: #20162b;
+    text-align: start;
+    margin-inline-end: 5rem;
+  }
+  
+  .info p {
+    color: #D13F30;
+    font-family: "FuturaBold";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 16px;
+  }
+  

@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Futura";
+  }
+  
+  
+  
+  @font-face {
+    font-family: "Futura";
+    src: local("Futura Std Book"), url("../fonts/FuturaStdBook.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "FuturaL";
+    src: local("Futura Std Light"), url("../fonts/FuturaStdLight.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "FuturaBold";
+    src: local("Futura Std Bold"), url("../fonts/FuturaStdBold.woff") format("woff");
+  }
+  
+  @font-face {
+      font-family: "FuturaExtraBold";
+      src: local("Futura Std Extra Bold"), url("../fonts/FuturaStdExtraBold.woff") format("woff");
+  }

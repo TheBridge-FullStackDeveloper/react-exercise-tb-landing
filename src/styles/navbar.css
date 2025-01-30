@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #1F152A;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 10rem;
+    margin-left: 10rem;   
+    margin-right: 1rem; 
+}
+
+
+.links {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.links li {
+    font-family: "Futura";
+    display: flex;
+    align-items: center;
+    
+}
