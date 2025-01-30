@@ -11,6 +11,7 @@ const Bootcamps = () => {
         </div>
 
         <div className="header">
+          <div className="red-bar"></div>
           <h1>{data.bootcamps.header}</h1>
         </div>
 

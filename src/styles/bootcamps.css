@@ -2,7 +2,17 @@
 .bootcamps {
     border: .5px solid #20162b;
   }
-  
+  .red-bar {
+    display: block;
+    background-color: #D13F30;
+    position: absolute;
+    left: 0;
+    padding: 10px 30px; /* Adjust padding for bar thickness */
+    width: 55%;
+    text-align: left;
+    z-index: -1;
+    
+}
   
   .title {
     margin-top: 1rem;
