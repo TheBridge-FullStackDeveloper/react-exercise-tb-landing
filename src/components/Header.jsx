@@ -8,7 +8,6 @@ const Header = () => {
 
         <div>
           
-          
           <h1>{data.header.title}</h1>
           <h3>{data.header.subheading}</h3>
           <h4>{data.header.paragraph}</h4>

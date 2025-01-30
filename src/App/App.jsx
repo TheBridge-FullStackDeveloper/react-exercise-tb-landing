@@ -3,7 +3,6 @@ import '../components/Navbar'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Bootcamps from '../components/Bootcamps'
-import Footer from '../components/Footer'
 
 function App() {
 
@@ -12,7 +11,7 @@ function App() {
     <Navbar/>
     <Header/>
     <Bootcamps/>
-    {/* <Footer/> */}
+
   
     </>
   )

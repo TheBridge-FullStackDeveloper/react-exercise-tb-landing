@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    border: .5px solid #20162b;
 
 }
 
@@ -46,8 +47,10 @@
     margin-inline-start: 2rem;
     margin-inline-end: 10rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 .header-container img {
     width: 60%;
 }
+

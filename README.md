@@ -8,30 +8,29 @@ Ejercicio de React donde hemos de copiar la página de landing de The Bridge con
     └── vite.svg
 └── src
     └── App
-        └── App.css
         └── App.jsx
     components
-        └── Features.jsx
+        └── Bootcamps.jsx
         └── Footer.jsx
         └── Header.jsx
-        └── HeroSection.jsx
+        └── Navbar.jsx
     styles
-        └── features.css
+        └── bootcamps.css
         └── footer.css
         └── global.css
         └── header.css
-        └── heroSection.css
+        └── navbar.css
 └── main.jsx
 └── .gitignore
 └── data.json
-└── esling.config.js
+└── eslint.config.js
 └── index.html
 └── package-lock.json
 └── package.json  
 └── README.md
 └── vite.config.js
 
-Header -> Navegación, Logos, desplegables
-HeroSection -> Imagen + Título principal
-Features -> Cards + Título secundario y logos
+Navbar -> Navegación, Logos, desplegables
+Header -> Imagen + Título principal
+Bootcamps -> Cards + Título secundario
 Footer -> Logos, contacto y RRSS
