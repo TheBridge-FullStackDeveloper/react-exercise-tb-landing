@@ -1,0 +1,53 @@
+.footer {
+height: 6em;
+padding: 10;
+background: var(--secondary-dark);
+color: white;
+}
+
+.footer-content {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+padding: 10;
+}
+
+.footerSection h3 {
+margin-bottom: var(--space-3);
+font-size: 1.1rem;
+}
+
+.footerLinks {
+list-style: none;
+}
+
+.footerLinks li {
+margin-bottom: var(--space-2);
+}
+
+.footerLinks a {
+color: rgba(255, 255, 255, 0.8);
+text-decoration: none;
+transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+color: white;
+}
+
+.socialLinks {
+display: flex;
+gap: var(--space-3);
+}
+
+.socialIcon {
+color: rgba(255, 255, 255, 0.5);
+transition: color 0.2s;
+}
+
+.socialIcon:hover {
+color: white;
+}
+
+
+
