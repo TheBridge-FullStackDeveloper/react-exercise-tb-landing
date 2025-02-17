@@ -7,7 +7,7 @@ function HeroSection() {
                 <h1>{data.header.title}</h1>
                 <h3>{data.header.subheading}</h3>
                 <p>{data.header.paragraph}</p>
-                <button>{data.header.button}</button>
+                <button className="inf-boton">{data.header.button}</button>
             </div>
             <div className="hero-img">
 

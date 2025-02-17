@@ -3,6 +3,7 @@ import data from "../../data.json"
 
 function Header() {
 return (
+    <>
     <header className="header">
     <nav className="nav-bar">
         <img src={data.navbar.img} alt="" />
@@ -10,7 +11,7 @@ return (
         <ul>
         {
             data.navbar.links.map((element)=>{
-                return <li>
+                return <li key={element}> 
                     {element}
                 </li>
             })
@@ -18,6 +19,7 @@ return (
         </ul>
     </nav>
     </header>
+    </>
 );
 }
 
